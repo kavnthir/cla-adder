@@ -38,7 +38,7 @@
 
 set_global_assignment -name FAMILY "Cyclone V"
 set_global_assignment -name DEVICE 5CSEMA5F31C6
-set_global_assignment -name TOP_LEVEL_ENTITY "hardware-square-root-finder"
+set_global_assignment -name TOP_LEVEL_ENTITY sqrt_toplevel
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 18.1.0
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "19:01:39  NOVEMBER 30, 2022"
 set_global_assignment -name LAST_QUARTUS_VERSION "18.1.1 Lite Edition"
@@ -53,3 +53,5 @@ set_global_assignment -name VERILOG_FILE sqrt_toplevel.v
 set_global_assignment -name VERILOG_FILE sqrt.v
 set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
 set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_global_assignment -name VERILOG_FILE seven_seg_driver.v
+set_global_assignment -name VERILOG_FILE keypressed.v
