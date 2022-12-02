@@ -6,8 +6,8 @@ module cla_adder(a, b, c_in, sum);
 
     wire [3:0] c, p, g;
 
-    assign p = {a[0] ^ b[0], a[1] ^ b[1], a[2] ^ b[2], a[3] ^ b[3]};
-    assign g = {a[0] & b[0], a[1] & b[1], a[2] & b[2], a[3] & b[3]};
+    assign p = {a[3] ^ b[3], a[2] ^ b[2], a[1] ^ b[1], a[0] ^ b[0]};
+    assign g = {a[3] & b[3], a[2] & b[2], a[1] & b[1], a[0] & b[0]};
 
     assign c[0] = g[0] | (p[0] & c_in);
     assign c[1] = g[1] | (p[1] & g[0]) | (p[1] & p[0] & c_in);
