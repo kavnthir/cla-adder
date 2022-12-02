@@ -17,6 +17,10 @@ module sqrt_tb();
 		for(count = 0; count < 9'b100000000; count = count + 1)begin
 		radicand = count[7:0];
 		#1000;
+		enable = 0;
+		#50;
+		enable = 1;
+		#50;
 		end
 	
 	$stop;

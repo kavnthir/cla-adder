@@ -17,9 +17,9 @@ module sqrt_toplevel(CLOCK_40, SW, KEY, HEX1, HEX0);
 						.enable_out(enable));	
 	
 	sqrt U2 (.radicand(SW),
-				.clk(CLOCK_40),
+				
 				.enable(enable),
-				.reset(KEY[1]),
+				
 				.root(root),
 				.valid_bit(valid));
 	
