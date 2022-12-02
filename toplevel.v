@@ -1,5 +1,5 @@
 
-module sqrt_toplevel(SW, HEX0, HEX1, HEX2, HEX3);
+module toplevel(SW, HEX0, HEX1, HEX2, HEX3);
 
    input [8:0]  SW;
    output [6:0] HEX1, HEX0, HEX2, HEX3;
