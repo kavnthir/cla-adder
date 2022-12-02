@@ -18,13 +18,13 @@
 #
 # Quartus Prime
 # Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-# Date created = 22:29:50  December 01, 2022
+# Date created = 19:01:39  November 30, 2022
 #
 # -------------------------------------------------------------------------- #
 
 QUARTUS_VERSION = "18.1"
-DATE = "22:29:50  December 01, 2022"
+DATE = "19:01:39  November 30, 2022"
 
 # Revisions
 
-PROJECT_REVISION = "hardware-square-root-finder"
+PROJECT_REVISION = "cla_adder"
