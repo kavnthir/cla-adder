@@ -4,7 +4,7 @@ module sqrt_toplevel(CLOCK_40, SW, KEY, HEX1, HEX0);
    input        CLOCK_40;
    input [7:0]  SW;
    input [1:0]  KEY;
-   output [6:0] HEX2, HEX1, HEX0;
+   output [6:0] HEX1, HEX0;
 	
 	wire enable;
 	wire valid;
@@ -21,11 +21,11 @@ module sqrt_toplevel(CLOCK_40, SW, KEY, HEX1, HEX0);
 				.enable(enable),
 				.reset(KEY[1]),
 				.root(root),
-				.valid(valid));
+				.valid_bit(valid));
 	
 	reg [7:0] valid_mux;
 	
-	always @ (posedge clk) begin
+	always @ (posedge CLOCK_40) begin
 		if (!valid) begin
 			valid_mux = 0;
 		end else begin
